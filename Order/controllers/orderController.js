@@ -84,10 +84,55 @@ const deleteOrder = async (req, res, next) => {
 }
 const date = async (req, res, next) => {
     try {
-        let order = await Orders.find({ "$or": [{ date: req.body.date }] })
+        let order = await Orders.find({ "$or": [{ date: req.query.date }] })
         console.log(order)
         res.send(order)
     } catch (error) {
+        res.status(400).json({
+            message: error.message
+        })
+    }
+}
+const userlistorder = async (req, res, next) => {
+    try {
+
+        // let order = await Orders.find({ "$or": [{ userId: req.user.id }] })
+        let orders = await Orders.find({ "$or": [{ userId: req.user.id }] })
+        let users = orders.map(a => {
+            return a.userId
+        })
+        console.log(users)
+        users = await Userget(users)
+        let products = orders.reduce((a, c) => {
+            a = [...a, ...c.items]
+            return a
+        }, [])
+        products = await productget(products)
+
+        orders = orders.map(a => {
+
+            a.items = a.items.map(b => {
+                let d = products.find(c => c._id === b)
+                return d
+
+            })
+            // let g = users.find(f => f.userId === a.users)
+            let g = users.find(v => v._id == a.userId)
+            console.log(g)
+            return {
+
+                cusmterorderList: a,
+                cusmtername: g.name
+            }
+
+        })
+        res.json({
+            status: 200,
+            data: orders
+        })
+    }
+    catch (error) {
+        console.log(error)
         res.status(400).json({
             message: error.message
         })
@@ -99,26 +144,37 @@ const listorder = async (req, res, next) => {
         // let order = await Orders.find({ "$or": [{ userId: req.user.id }] })
         let orders = await Orders.find()
         let users = orders.map(a => {
+
             return a.userId
         })
-        console.log(users)
+        // console.log(users)
         users = await Userget(users)
+        users = JSON.parse(JSON.stringify(users))
+        console.log(users)
+
         let products = orders.reduce((a, c) => {
             a = [...a, ...c.items]
             return a
         }, [])
         products = await productget(products)
-        console.log(products)
+
         orders = orders.map(a => {
-            let g = users.find(f => f.userId === a.users)
+
             a.items = a.items.map(b => {
                 let d = products.find(c => c._id === b)
                 return d
             })
+            console.log("users printed", users)
+            console.log("A", a)
+            let username = users.find(v => v._id == a.userId)
+
+
+            // console.log(g)
             return {
 
                 cusmterorderList: a,
-                cusmtername: g.name
+                custumerName: username.name
+
 
             }
 
@@ -135,4 +191,4 @@ const listorder = async (req, res, next) => {
         })
     }
 }
-module.exports = { orderplace, updateOrder, deleteOrder, listorder, date }
+module.exports = { orderplace, updateOrder, deleteOrder, userlistorder, listorder, date }

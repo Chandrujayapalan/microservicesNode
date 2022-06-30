@@ -18,22 +18,35 @@ const register = (req, res, next) => {
                 password: hashedPass,
                 userType: 1
             })
+            let exitUser = await User.findOne({
+                $or: [{ email : req.body.email }, { phone :  req.body.phone }]
+              })
+              if (exitUser) {
+                console.log("already registered");
+              } else {
             await user.save()
+            s  
             if (user) {
                 var result = {
                     name: user.name,
                     email: user.email,
-                    phone: user.phone,
-                    profilePic: user.profilePic
+                    phone: user.phone
                 }
                 res.json({
                     Status: 200,
                     message: 'Added successfully',
-                    data: result
+                    data: result 
 
                 })
             }
+        }
+        res.json({
+            Status: 200,
+            message: "Already registered"
+
         })
+        })
+    
     }
     catch (error) {
         res.json({
