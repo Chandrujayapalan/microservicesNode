@@ -23,6 +23,9 @@ const userSchema = new Schema({
     },
     userType: {
         type: Number
+    },
+    verifed : {
+        type :Boolean
     }
 },
 { timestamps: true })
