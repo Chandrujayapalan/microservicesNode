@@ -1,0 +1,11 @@
+13/7/2022 17:42 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/deleteOrder | DELETE | Request : {"orderId":"1"} | Error : Not found
+13/7/2022 17:43 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/deleteOrder | DELETE | Request : {"orderId":"1"} | Error : Not found
+13/7/2022 17:43 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/deleteOrder | DELETE | Request : {"orderId":"1"} | Error : Not found
+13/7/2022 17:43 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/deleteOrder | DELETE | Request : {"orderId":"2"} | Error : Not found
+13/7/2022 17:44 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/deleteOrder | DELETE | Request : {"orderId":"2"} | Error : Not found
+13/7/2022 17:44 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/deleteOrder | DELETE | Request : {"orderId":"2"} | Error : Not found
+13/7/2022 17:44 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/deleteOrder | DELETE | Request : {"orderId":"2"} | Error : Not found
+13/7/2022 17:44 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/deleteOrder | DELETE | Request : {"orderId":"1"} | Error : Not found
+13/7/2022 17:45 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/deleteOrder | DELETE | Request : {"orderId":"1"} | Error : Not found
+13/7/2022 17:45 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/deleteOrder | DELETE | Request : {"orderId":"1"} | Error : Not found
+13/7/2022 17:51 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/favicon.ico | GET | Request : {} | Error : Not found

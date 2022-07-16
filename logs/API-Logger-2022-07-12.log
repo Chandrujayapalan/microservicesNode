@@ -1,0 +1,3 @@
+12/7/2022 18:46 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/orderplace | POST | Request : {} | Error : Unexpected string in JSON at position 92
+12/7/2022 18:51 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/orderplace | POST | Request : {} | Error : Unexpected token } in JSON at position 62
+12/7/2022 18:52 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/orderplace | POST | Request : {} | Error : Unexpected token } in JSON at position 61

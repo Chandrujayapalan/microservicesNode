@@ -1,0 +1,4 @@
+14/7/2022 11:43 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/orderplace | POST | Request : {} | Error : Unexpected token } in JSON at position 66
+14/7/2022 17:25 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/userListOrder | POST | Request : {"username":"teaasat","password":"1234","email":"12a3@gmail.com","roles":["admin"]} | Error : Not found
+14/7/2022 17:39 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/userListOrder | POST | Request : {} | Error : Not found
+14/7/2022 17:40 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/userListOrder | POST | Request : {} | Error : Not found

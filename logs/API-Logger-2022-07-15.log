@@ -1,0 +1,7 @@
+15/7/2022 15:13 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/listProduct?serach=spoon | GET | Request : {} | Error : Not found
+15/7/2022 15:16 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/listProduct/:search?search=spoon | GET | Request : {} | Error : Not found
+15/7/2022 15:16 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/listProduct/:search?search=spoon | GET | Request : {} | Error : Not found
+15/7/2022 15:17 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/listProduct/:search?search=spoon | GET | Request : {} | Error : Not found
+15/7/2022 15:17 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/listProduct/:search?name=spoon | GET | Request : {} | Error : Not found
+15/7/2022 15:17 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/listProduct/:search?name=spoon | GET | Request : {} | Error : Not found
+15/7/2022 18:59 | \errorHandler.js(34) |  | [error] | IP - ::1 | URL : http://localhost:2330/v1/user/sendVerificationEmail | POST | Request : {"email":"jayapalanchandru@gmail.com"} | Error : Not found
